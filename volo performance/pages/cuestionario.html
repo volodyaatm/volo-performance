@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cuestionario inicial — VOLO Performance</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="logo">
+      <img src="../img/logo.svg" alt="VOLO Performance">
+      <span>VOLO</span>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="precios.html">Precios</a></li>
+      <li><a href="opo.html">Oposiciones</a></li>
+    </ul>
+  </nav>
+
+  <main class="section">
+    <h2>Cuestionario inicial</h2>
+    <p class="section-subtitle">
+      Cuéntame tu objetivo y tu situación actual. A partir de ahí diseñamos tu planificación.
+    </p>
+
+    <form class="cards" style="max-width: 700px; margin: 0 auto;" action="#" method="post">
+      <div class="card">
+        <h3>Datos personales</h3>
+        <label>Nombre</label>
+        <input type="text" name="nombre" required>
+        <label>Edad</label>
+        <input type="number" name="edad" required>
+        <label>Sexo</label>
+        <input type="text" name="sexo">
+        <label>Altura (cm)</label>
+        <input type="number" name="altura">
+        <label>Peso (kg)</label>
+        <input type="number" name="peso">
+        <label>Email</label>
+        <input type="email" name="email" required>
+        <label>Teléfono</label>
+        <input type="tel" name="telefono">
+      </div>
+
+      <div class="card">
+        <h3>Objetivo principal</h3>
+        <select name="objetivo">
+          <option>Ganar masa muscular</option>
+          <option>Perder grasa</option>
+          <option>Ganar fuerza</option>
+          <option>Mejorar condición física</option>
+          <option>Preparar una oposición</option>
+          <option>Mejorar carrera</option>
+          <option>Otro</option>
+        </select>
+      </div>
+
+      <div class="card">
+        <h3>Entrenamiento actual</h3>
+        <label>Días de deporte actualmente</label>
+        <input type="number" name="dias_actuales">
+        <label>Días que puedes entrenar</label>
+        <input type="number" name="dias_posibles">
+        <label>Tiempo por sesión (min)</label>
+        <input type="number" name="tiempo_sesion">
+        <label>¿Entrenas en gimnasio, casa, ambos?</label>
+        <input type="text" name="lugar">
+        <label>Material disponible</label>
+        <textarea name="material"></textarea>
+        <label>Tiempo entrenando</label>
+        <input type="text" name="experiencia">
+      </div>
+
+      <div class="card">
+        <h3>Salud y alimentación</h3>
+        <label>Condiciones médicas relevantes</label>
+        <textarea name="salud"></textarea>
+        <label>Lesiones o limitaciones</label>
+        <textarea name="lesiones"></textarea>
+        <label>Alimentación actual</label>
+        <textarea name="alimentacion"></textarea>
+      </div>
+
+      <button class="btn-primary" type="submit">Enviar cuestionario</button>
+    </form>
+  </main>
+</body>
+</html>
